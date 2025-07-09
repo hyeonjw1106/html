@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>롤 전적 검색은 op.gg</title>
+  <link rel="stylesheet" href="project_ranking.css">
+</head>
+<body>
+  <div style="background-color: skyblue; width: 1500px; margin-left: -10px;">
+    <div class="headerdiv">
+      <h3 class="opgg">OP.GG</h3>
+      <button class="logout">로그아웃</button>
+    </div>
+    <div class="blueheaddiv">
+      <button class="menubutton" id="home">홈</button>
+      <button class="menubutton" id="im"> 챔피언 분석 </button>
+      <button class="menubutton active" id="rank">랭킹</button>
+      <button class="menubutton" id="spector">프로 관전</button>
+    </div>
+
+  <div style="padding: 30px;">
+    <table border="1" cellspacing="0" cellpadding="8" style="width: 1000px; text-align: center; margin: 0 auto; background-color: white;">
+      <thead style="background-color: lightgray; color: black;">
+        <tr>
+          <th>닉네임</th>
+          <th>티어</th>
+          <th>LP</th>
+          <th>승률</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>T1 Faker</td> <td>challenger</td> <td>2005</td> <td>1000%</td></tr>
+        <tr><td>pzZzang</td> <td>challenger</td> <td>1972</td> <td>64%</td></tr>
+        <tr><td>어리고싶다</td> <td>challenger</td> <td>1823</td> <td>62%</td></tr>
+        <tr><td>현진아</td> <td>challenger</td> <td>1823</td> <td>100%</td></tr>
+        <tr><td>양상추없는빅맥</td> <td>challenger</td> <td>1806</td> <td>62%</td></tr>
+        <tr><td>성쥰</td> <td>challenger</td> <td>1801</td> <td>58%</td></tr>
+        <tr><td>개인팟</td> <td>challenger</td> <td>1797</td> <td>54%</td></tr>
+        <tr><td>T1 keria</td> <td>challenger</td> <td>1757</td><td>64%</td></tr>
+        <tr><td>도우너 심슨</td> <td>challenger</td> <td>1733</td> <td>55%</td></tr>
+        <tr><td>위스키와 빵</td> <td>challenger</td> <td>1721</td> <td>61%</td></tr>
+        <tr><td>lemon</td> <td>challenger</td> <td>1700</td> <td>54%</td></tr>
+        <tr><td>hyra</td> <td>challenger</td> <td>1699</td> <td>60%</td></tr>
+        <tr><td>mc농약두봉지</td> <td>iron</td> <td>1678</td> <td>1%</td></tr>
+        <tr><td>가슴마스터</td> <td>grandmaster</td> <td>1666</td> <td>57%</td></tr>
+        <tr><td>Deft</td> <td>grandmaster</td> <td>1654</td> <td>68%</td></tr>
+        <tr><td>tralalero</td> <td>grandmaster</td> <td>1654</td><td>88%</td></tr>
+        <tr><td>PENGUIN</td><td>grandmaster</td><td>1633</td><td>71%</td></tr>
+        <tr><td>showmaker</td> <td>grandmaster</td> <td>1611</td> <td>66%</td></tr>
+        <tr><td>시간의숲</td><td>grandmaster</td> <td>1594</td> <td>59%</td></tr>
+        <tr><td>발젭</td><td>master</td> <td>1555</td> <td>66%</td></tr>
+        <tr><td>링규링규링</td> <td>master</td> <td>1534</td> <td>55%</td></tr>
+        <tr><td>slutterhouse</td> <td>master</td> <td>1501</td> <td>70%</td></tr>
+        <tr><td>뽀로로</td> <td>master</td><td>1432</td> <td>50%</td></tr>
+        <tr><td>zedd99</td> <td>master</td> <td>1431</td> <td>63%</td></tr>
+        <tr><td>ㅇㅅㅇ</td><td>master</td><td>1422</td><td>57%</td></tr>
+        <tr><td>venerem</td> <td>master</td><td>1378</td><td>61%</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+</div>
+
+  <script>
+  const buttons = document.querySelectorAll('.menubutton');
+
+  buttons.forEach(button => {
+  button.addEventListener('click', () => {
+    buttons.forEach(btn => btn.classList.remove('active'));
+    button.classList.add('active');
+  });
+  });
+
+// 로그아웃 버튼 클릭 시
+const logoutButton = document.querySelector('.logout');
+logoutButton.addEventListener('click', () => {
+  window.location.href = 'project.html';  // 로그아웃 후 이동
+});
+
+    const champ = document.getElementById('im');
+    champ.addEventListener('click', () => {
+    window.location.href = 'project_champ.html';
+  });
+
+    const home = document.getElementById('home');
+    home.addEventListener('click', () => {
+    window.location.href = 'project.html';
+  });
+
+  const ranking = document.getElementById('rank');
+  ranking.addEventListener('click', () => {
+  window.location.href = 'project_ranking.html';
+});
+
+  const spector = document.getElementById('spector');
+  spector.addEventListener('click', () => {
+  window.location.href = 'project_spector.html';
+});
+
+</script>
+
+  
+</body>
+</html>

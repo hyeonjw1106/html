@@ -1,0 +1,106 @@
+/* 헤더 영역 */
+.headerdiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1480px;
+    height: 70px;
+    background-color: black;
+    padding: 0 20px;
+    box-sizing: border-box;
+    margin-top: -10px;
+    margin-left: -10px;
+  }
+  
+  /* OP.GG 텍스트 */
+  .opgg {
+    color: white;
+    font-size: 20px;
+    margin: 0; /* h3 기본 마진 제거 */
+  }
+  
+  /* 로그인 버튼 */
+  .login {
+    background-color: gray;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  /* 파란 메뉴 바 */
+  .blueheaddiv {
+    width: 1480px;
+    height: 70px;
+    background-color: blue;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    box-sizing: border-box;
+    margin-left: -10px;
+  }
+  
+  /* 메뉴 버튼들 */
+  .menubutton {
+    margin-right: 40px;
+    background-color: blue;
+    border: none;
+    color: lightgray;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  /* 선택된 메뉴 스타일 */
+  .menubutton.active {
+    color: white;
+    text-decoration: underline;
+    text-decoration-color: white;
+  }
+  
+  .logout {
+    background-color: gray;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  .champ_img {
+    float: left;
+    margin-left: 80px;
+    margin-top: 100px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    clear: both;
+    margin-bottom: 140px;
+    transition: transform 0.3s ease;
+  }
+
+.champ_img:hover {
+  transform: scale(1.08);
+}
+
+  
+
+  .yone_ex {
+    float: left;
+    margin-left: 80px;
+    margin-top: 100px;
+  }
+
+  .akali_ex {
+    float: left;
+    margin-left: 80px;
+    margin-top: 100px;
+  }
+  .zedd_ex {
+    float: left;
+    margin-left: 80px;
+    margin-top: 100px;
+  }
+  .yas_ex {
+    float: left;
+    margin-left: 80px;
+    margin-top: 100px;
+  }

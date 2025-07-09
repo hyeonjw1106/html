@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>롤 전적 검색은 op.gg</title>
+  <link rel="stylesheet" href="project_champ.css">
+</head>
+<body>
+  <div>
+    <div class="headerdiv">
+      <h3 class="opgg">OP.GG</h3>
+      <button class="logout"> 로그아웃 </button>
+    </div>
+    <div class="blueheaddiv">
+      <button class="menubutton" id="home">홈</button>
+      <button class="menubutton active" id="im">챔피언 분석</button>
+      <button class="menubutton" id="rank">랭킹</button>
+      <button class="menubutton" id="spector">프로 관전</button>
+    </div>
+  <div style="background-color: skyblue; width: 1500px; margin-left: -10px;">
+    <div style="width: 1480px; height: 400px;">
+      <a href="project_yone_combo.html">
+        <img src="yone.webp" class="champ_img" id="yone">
+      </a>
+      <p class="yone_ex"> 직업군 : 전사 <br> <b>Q-필멸의 검</b> : 전방으로 검을 내질러 물리 피해를 입힙니다. 적중 시, 6초간 1회 중첩됩니다.
+        2회 중첩되면 <br>전방으로 돌진하며 돌풍을 날려 0.75초 동안 적을 공중으로 띄워 올리고 물리 피해를 입힙니다.<br><br>
+        <b>W-영혼 가르기</b> : 전방을 가르며 최대 체력에 비례한 물리 피해 및 마법 피해를 입힙니다.<br>
+        공격이 적중하면 1.5초 동안 보호막을 얻습니다. 적중한 챔피언 수만큼 보호막 흡수량이 증가합니다.<br><br>
+        <b> E-영혼해방 </b> : 5초 동안 영혼 상태가 되어 이동 속도가 10%에서 점차 증가합니다. <br>
+        영혼 상태가 끝나면 다시 육신으로 돌아오며 영혼 상태에서 챔피언에게 입힌 모든 피해량의 일부를 다시 입힙니다.<br><br>
+        <b> R-운명봉인 </b> : 요네가 경로에 있는 모든 적을 공격해 물리 피해와 마법 피해를 입히고<br>
+        경로에 있는 마지막 챔피언 뒤로 순간이동해 적중한 모든 적을 자신 쪽으로 끌어당기며 띄워 올립니다. </p>
+    </div>
+
+    <div style="width: 1480px; height: 400px;">
+      <a href="project_akali_combo.html">
+        <img src="akali.webp" class="champ_img" id="akali">
+      </a>
+      <p class="akali_ex"> 직업군 : 암살자 <br> <b>Q-오연투척검</b> : 단검을 부채꼴 모양으로 던져 마법 피해를 입히고 사거리 끝에 있는 적들을 0.5초 동안
+         50%만큼 둔화시킵니다. <br><br> <b> W-황혼의 장막 </b> : 연막탄을 떨어뜨려 5초 동안 지속되는 연막을 생성하고 이동 속도가 증가했다가<br>
+         2초에 걸쳐 원래대로 돌아옵니다. 활성화 된 상태에선 기력이 100 증가하고 투명 상태가 됩니다.<br><br>
+         <b>E-표창곡예</b> : 뒤로 공중제비를 돌며 표창을 던져 마법 피해를 입히고 표창에 맞은 첫 번째 적이나 연막에 표식을 남깁니다.<br>
+         한 번 더 재사용하면 표식을 남긴 대상에게 돌진해 마법 피해를 줍니다.<br><br>
+         <b>R-무결처형</b> : 아칼리가 적 챔피언을 뛰어넘어 경로 내에 있는 모든 적에게 마법 피해를 입힙니다.<br>
+         2.5초 후 재사용하면 적들을 관통하며 돌진하여 대상이 잃은 체력에 비례해 마법 피해를 입힙니다.
+      </p>
+    </div>
+
+    <div style="width: 1480px; height: 400px;">
+      <a href="project_zedd_combo.html">
+        <img src="zedd.webp" class="champ_img" id="zedd">
+      </a>
+      <p class="zedd_ex"> 직업군 : 암살자 <br> <b>Q-예리한 표창</b> : 표창을 던져, 각각 처음 맞는 적에게 물리 피해를 입히고
+         이후 추가로 맞히는 적에게는 각각 60%의 물리 피해를 입힙니다.<br><br>
+        <b>W-살아있는 그림자</b> : 기본 지속 효과: 같은 스킬로 동일한 대상을 공격할 때마다 기력을 얻습니다.<br>
+        사용 시: 제드의 그림자가 전방으로 질주하여, 5초간 그 자리에 유지됩니다. 이 스킬을 재사용하면 제드가 그림자와 위치를 바꿉니다. <br><br>
+        <b>E-그림자 베기</b> : 각각 주위 적을 베어 물리 피해를 입힙니다. 이 스킬로 적 챔피언을 하나 맞힐 때마다 W스킬의 재사용 대기시간이 3초씩 감소합니다.<br>
+        그림자의 스킬에 맞은 적은 1.5초 동안 둔화됩니다.<br><br>
+        <b>R-죽음의 표식</b> : 잠시 대상으로 지정할 수 없는 상태가 되어 7.5초 동안 유지되는 그림자를 남기고 적 챔피언에게 돌진하며 표식을 남깁니다.<br>
+         3초가 지나면 표식이 발동되며 물리 피해를 입히고 표식이 적용된 동안 대상에게 가한 피해의 일부에 해당하는 피해를 추가로 입힙니다.<br>
+         이 스킬을 재사용하면 제드가 그림자와 위치를 바꿉니다.
+        </p>
+    </div>
+
+    <div style="width: 1480px; height: 400px;">
+      <a href="project_yas_combo.html">
+        <img src="yas.webp" class="champ_img" id="yas">
+      </a>
+      <p class="yas_ex"> 직업군 : 전사 <br> <b>Q-강철 폭풍</b> : 검을 내질러 물리 피해를 입힙니다. 적중 시 6초간 1회 중첩됩니다.<br>
+        2회 중첩 시 이 스킬을 다시 사용하면 회오리바람을 날려 동일한 피해를 입히고 1초 동안 띄워 올립니다. 돌진 도중 이 스킬을 사용할 경우 원형으로 타격합니다.<br><br>
+        <b>W-바람 장막</b> : 4초간 모든 적의 투사체를 막아주는 바람의 벽을 생성합니다. 포탑 공격과 광선은 막을 수 없습니다. <br><br>
+        <b>E-질풍검</b> : 대상을 뚫고 돌진하여 마법 피해를 입힙니다. 사용할 때마다 5초간 다음번 돌진의 피해량이 25%씩 올라 최대 100%까지 상승합니다.<br>
+        이 스킬은 공격 대상별로 재사용 대기시간이 적용됩니다.<br><br>
+        <b>R-최후의 숨결</b> : 야스오가 적 챔피언에게 순간이동하여 물리 피해를 입히고 주변 모든 적을 1초 더 공중에 붙들어둡니다.<br>
+        기류가 최대치로 차는 대신, 강철 폭풍 중첩을 모두 잃습니다. 이후 야스오의 치명타 공격이 15초 동안 대상 추가 방어력의 60%를 무시합니다.
+      </p>
+    </div>
+  </div>
+
+  </div>
+
+  <script>
+    const buttons = document.querySelectorAll('.menubutton');
+
+    buttons.forEach(button => {
+      button.addEventListener('click', () => {
+        buttons.forEach(btn => btn.classList.remove('active'));
+        button.classList.add('active');
+      });
+    });
+
+    const loginButton = document.querySelector('.logout');
+  loginButton.addEventListener('click', () => {
+    window.location.href = 'project.html';
+  });
+
+  const champ = document.getElementById('im');
+    champ.addEventListener('click', () => {
+    window.location.href = 'project_champ.html';
+  });
+
+    const home = document.getElementById('home');
+    home.addEventListener('click', () => {
+    window.location.href = 'project.html';
+  });
+
+  const ranking = document.getElementById('rank');
+  ranking.addEventListener('click', () => {
+  window.location.href = 'project_ranking.html';
+});
+
+  const spec = document.getElementById('spector');
+  spec.addEventListener('click', () => {
+  window.location.href = 'project_spector.html';
+});
+  </script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>op.gg 로그인</title>
+    <link rel="stylesheet" href="project_login.css">
+</head>
+<body>
+    <div style="color: white;">
+        <h3 class="opgg">OP.GG</h3>
+
+        <div>
+          <h1 class="login_text"> 로그인 </h1>
+          <p class="intro_text">모든 게이머들을 위한 opgg 멤버 커뮤니티에 오신 것을 환영합니다.</p>
+          <input type="email" class="email_input" placeholder="이메일 주소" id="em">
+          <input type="password" class="password_input" placeholder="비밀번호" id="pw">
+        </div>
+
+        <div>
+          <input type="button" value="로그인" class="login_button" id="log_bt">
+          <p>                    </p>
+          <p class="signup_text">아직 opgg 회원이 아니신가요?</p>
+          <a href="project_signup.html" class="signup_link"> 회원가입하기 </a>
+      
+
+
+        </div>
+
+
+    <div>
+
+    <script>
+      document.getElementById('log_bt').addEventListener('click', function() {
+        const email = document.getElementById('em').value;
+        const password = document.getElementById('pw').value;
+
+        if (email === '12345678@mail' && password === '12345678') {
+          window.location.href = 'project_logined_page.html';
+        } else {
+          alert('로그인 실패: 이메일 또는 비밀번호가 올바르지 않습니다.');
+          // 입력값 초기화
+          document.getElementById('em').value = '';
+          document.getElementById('pw').value = '';
+        }
+      });
+    </script>
+</body>
+</html>

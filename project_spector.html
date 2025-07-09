@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>롤 전적 검색은 op.gg</title>
+  <link rel="stylesheet" href="project_spector.css">
+</head>
+<body>
+  <div style="background-color: skyblue; width: 1500px; height: 1500px; margin-left: -10px;">
+    <div class="headerdiv">
+      <h3 class="opgg">OP.GG</h3>
+      <button class="logout">로그아웃</button>
+    </div>
+    <div class="blueheaddiv">
+      <button class="menubutton" id="home">홈</button>
+      <button class="menubutton" id="im"> 챔피언 분석 </button>
+      <button class="menubutton" id="rank">랭킹</button>
+      <button class="menubutton active" id="spector">프로 관전</button>
+    </div>
+    <div>
+      <div style="float: left; width: 600px;">
+        <img src="faker.png" class="img">
+        <p class="introduce"> <h3 style="padding-top: 30px;">페이커(이상혁)</h3><br><b>주 포지션</b> : 미드 <br>
+          <b>수상경력</b> : WORLDS 5회 우승 | LCK 10회 우승 등등...<br>
+          <b>소속</b> : T1<br><br></p>
+
+        <a href="https://www.youtube.com/watch?v=5ilcisynfuY"><p class="text">페이커 영상 보러가기</p></a>
+      </div>
+      <div style="margin-left: 700px;">
+          <img src="guma.png" class="img">
+          <p class="introduce"> <h3 style="padding-top: 50px;">구마유시(이민형)</h3><br><b>주 포지션</b> : 원딜 <br>
+            <b>수상경력</b> : 2018 챔피언십 우승 | 2023, 2024 월드챔피언십 우승 등등...<br>
+            <b>소속</b> : T1<br><br></p>
+  
+          <a href="https://www.youtube.com/watch?v=knx-uYiFZbY"><p class="text">구마유시 영상 보러가기</p></a>
+      </div>
+    </div>
+
+
+    <div style="clear: left; width: 700px; float: left;">
+        <img src="doran.png" class="img">
+        <p class="introduce"> <h3 style="padding-top: 30px;">도란(최현준)</h3><br><b>주 포지션</b> : 탑 <br>
+          <b>수상경력</b> : 2022~2024 summer 우승 | 2023 spring 우승<br>
+          <b>소속</b> : T1<br><br></p>
+
+        <a href="https://www.youtube.com/watch?v=4jwP73Faqwc&t=1s"><p class="text">도란 영상 보러가기</p></a>
+      </div>
+      <div style="margin-left: 700px;">
+          <img src="chovy.png" class="img">
+          <p class="introduce"> <h3 style="padding-top: 50px;">쵸비(정지훈)</h3><br><b>주 포지션</b> : 미드 <br>
+            <b>수상경력</b> : 2018, 2023 스프링 우승 | 2022 항저우 아시안 게임 금메달<br>
+            <b>소속</b> : Gen.G<br><br></p>
+  
+          <a href="https://www.youtube.com/watch?v=d0mRzUIxvpoY"><p class="text">쵸비 영상 보러가기</p></a>
+      </div>
+    </div>
+
+
+  </div>
+  <script>
+  const buttons = document.querySelectorAll('.menubutton');
+
+  buttons.forEach(button => {
+  button.addEventListener('click', () => {
+    buttons.forEach(btn => btn.classList.remove('active'));
+    button.classList.add('active');
+  });
+  });
+
+// 로그아웃 버튼 클릭 시
+const logoutButton = document.querySelector('.logout');
+logoutButton.addEventListener('click', () => {
+  window.location.href = 'project.html';  // 로그아웃 후 이동
+});
+
+    const champ = document.getElementById('im');
+    champ.addEventListener('click', () => {
+    window.location.href = 'project_champ.html';
+  });
+
+    const home = document.getElementById('home');
+    home.addEventListener('click', () => {
+    window.location.href = 'project.html';
+  });
+
+  const ranking = document.getElementById('rank');
+  ranking.addEventListener('click', () => {
+  window.location.href = 'project_ranking.html';
+});
+
+  const spec = document.getElementById('spector');
+  spec.addEventListener('click', () => {
+  window.location.href = 'project_spector.html';
+});
+  </script>
+
+  
+</body>
+</html>

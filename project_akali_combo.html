@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="project_akali_combo.css">
+</head>
+<body>
+
+  <div style="background-color: skyblue; width: 1500px; height: 1000px; margin-left: -10px;">
+    <div class="headerdiv">
+        <h3 class="opgg">OP.GG</h3>
+        <button class="logout"> 로그아웃 </button>
+    </div>
+    <div class="blueheaddiv">
+        <button class="menubutton" id="home">홈</button>
+        <button class="menubutton active" id="im">챔피언 분석</button>
+        <button class="menubutton">랭킹</button>
+        <button class="menubutton">프로 관전</button>
+    </div>
+    <div>
+        <video width="780" controls class="combo_vid" id="video" preload="auto">
+            <source src="akali.mp4" type="video/mp4">
+        </video>
+    </div>
+    <img src="akaliR.png" class="icon">
+    <img src="right.png" class="arrow">
+    <img src="akaliE.png" class="icon">
+    <img src="right.png" class="arrow">
+    <img src="akaliitem.png" class="icon">
+    <img src="right.png" class="arrow">
+    <img src="akaliQ.png" class="icon">
+    <img src="right.png" class="arrow">
+    <img src="akalipas.png" class="icon">
+    <img src="right.png" class="arrow">
+    <img src="akaliE.png" class="icon" style="clear: left;">
+    <img src="right.png" class="arrow">
+    <img src="akaliR.png" class="icon">
+    <button class="back_button">돌아가기</button>
+  </div>
+
+  <script>
+    const video = document.getElementById('video');
+    video.style.opacity = 0;
+    video.style.transition = 'opacity 2s';
+
+    video.oncanplay = function() {
+        video.style.opacity = 1;
+    };
+
+    const icons = document.querySelectorAll('.icon');
+  icons.forEach((img, index) => {
+    setTimeout(() => {
+      img.style.opacity = 1;
+    }, 500 + index * 300); // 0.5초 뒤 시작, 각 이미지마다 0.3초 간격
+  });
+
+  document.querySelector('.back_button').addEventListener('click', function() {
+  window.location.href = 'project_champ.html';
+});
+  </script>
+
+</body>
+</html>

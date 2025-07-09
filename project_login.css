@@ -1,0 +1,54 @@
+.opgg {
+    margin-left: 30px;
+    margin-top: 27px;
+    color: black;
+}
+
+
+.login_text {
+    text-align: center;
+    margin-top: 120px;
+    color: gray;
+}
+
+.intro_text {
+    text-align: center;
+    margin-top: 140;
+    color: gray;
+}
+
+.email_input {
+    margin-left: 550px;
+    width: 350px;
+    height: 40px;
+}
+
+.password_input {
+    margin-left: 550px;
+    width: 350px;
+    height: 40px;
+    margin-top: 10px;
+}
+
+.login_button {
+    margin-left: 600px;
+    width: 250px;
+    height: 60px;
+    background-color: #888;
+    color: white;
+    margin-top: 15px;
+    border-radius: 5px;
+    border: #888;
+    clear: right;
+}
+
+.login_button:active {
+    background-color: #555;
+}
+
+.signup_text {
+    margin-left: 600px; 
+    display: inline;
+    color: gray;
+}
+

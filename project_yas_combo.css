@@ -1,0 +1,115 @@
+.combo_vid {
+    margin-left: 60px;
+    margin-top: 30px;
+}
+
+.opgg {
+    margin-left: 30px;
+    margin-top: 27px;
+    color: white;
+}
+
+.headerdiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1480px;
+    height: 70px;
+    background-color: black;
+    padding: 0 20px;
+    box-sizing: border-box;
+    margin-top: -10px;
+    margin-left: -10px;
+  }
+
+.blueheaddiv {
+    width: 1480px;
+    height: 70px;
+    background-color: blue;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    box-sizing: border-box;
+    margin-left: -10px;
+  }
+
+.menubutton {
+    margin-right: 40px;
+    background-color: blue;
+    border: none;
+    color: lightgray;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  /* 선택된 메뉴 스타일 */
+.menubutton.active {
+    color: white;
+    text-decoration: underline;
+    text-decoration-color: white;
+  }
+  
+.logout {
+    background-color: gray;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+  }
+
+.icon {
+    width: 80px;
+    height: 80px;
+    float: left;
+    margin-left: 80px;
+    margin-top: 40px;
+    border: solid 2px goldenrod;
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+.arrow {
+    width: 60px;
+    height: 60px;
+    float: left;
+    margin-top: 50px;
+    margin-left: 50px;
+    background-color: skyblue;
+}
+
+@keyframes bounceInRightTop {
+    0% {
+      opacity: 0;
+      transform: translate(200px, -200px) scale(0.3);
+    }
+    60% {
+      opacity: 1;
+      transform: translate(-20px, 20px) scale(1.05);
+    }
+    80% {
+      transform: translate(10px, -10px) scale(0.95);
+    }
+    100% {
+      transform: translate(0, 0) scale(1);
+    }
+  }
+  
+.combo_vid {
+    opacity: 0;
+    animation: bounceInRightTop 1.5s ease-out forwards;
+  }
+
+.back_button {
+    margin-left: 1300px;
+    width: 150px;
+    height: 50px;
+    background-color: white;
+    border: solid 1px black;
+  }
+
+.back_button:hover {
+    background-color: lightgrey;
+}
+
+  

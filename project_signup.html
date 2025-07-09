@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Document</title>
+  <link rel="stylesheet" href="project_signup.css"/>
+</head>
+<body>
+  <div class="container">
+    <h3 class="opgg">OP.GG</h3>
+
+    <div class="intro-section">
+      <h2 class="intro_mes">OPGG 멤버 아이디를<br>입력하세요</h2>
+      <p class="intro_mes_plus">
+        모든 게이머들을 위한 opgg회원 커뮤니티에 오신 <br>
+        것을 환영합니다. 등록을 완료하고 모험을 시작하세요.
+      </p>
+    </div>
+
+    <div class="form-section">
+      <input type="text" class="in" placeholder="이메일 주소" required>
+      <input type="text" class="in" placeholder="이름" required>
+      <input type="text" class="in" placeholder="전화번호(숫자만)" required>
+      <input type="password" class="in" placeholder="비밀번호" required>
+      <input type="password" class="in" placeholder="비밀번호 확인" required>
+    </div>
+
+    <div class="submit-section">
+      <button class="complete" onclick="handleSubmit()">회원가입 완료</button>
+    </div>
+  </div>
+
+  <script>
+    function handleSubmit() {
+      const inputs = document.querySelectorAll('.in');
+      let allFilled = true;
+
+      inputs.forEach(input => {
+        if (input.value.trim() === '') {
+          allFilled = false;
+        }
+      });
+
+      if (!allFilled) {
+        alert("모든 칸을 기입해주세요");
+        return;
+      }
+
+      const password = inputs[3].value.trim();
+      const confirmPassword = inputs[4].value.trim();
+
+      if (password !== confirmPassword) {
+        alert("비밀번호가 일치하지 않습니다.");
+        return;
+      }
+
+      alert("회원가입이 성공적으로 완료되었습니다.");
+      window.location.href = 'project.html';
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>롤 전적 검색은 op.gg</title>
+  <link rel="stylesheet" href="project.css" />
+</head>
+<body>
+  <div style="background-color: skyblue; width: 1500px; height: 880px; margin-left: -10px;">
+    <div class="headerdiv">
+      <h3 class="opgg">OP.GG</h3>
+      <button class="logout">로그아웃</button>
+    </div>
+    <div class="blueheaddiv">
+      <button class="menubutton active" id="home">홈</button>
+      <button class="menubutton" id="im"> 챔피언 분석 </button>
+      <button class="menubutton" id="rank">랭킹</button>
+      <button class="menubutton" id="spector">프로 관전</button>
+    </div>
+    <h1 style="text-align: center; margin-top: 130px;"> 안녕하세요, 회원님! OP.GG의<br> 다양하고 편리한 기능을 이용해보세요!</h1>
+  </div>
+
+  <script>
+  const buttons = document.querySelectorAll('.menubutton');
+
+  buttons.forEach(button => {
+  button.addEventListener('click', () => {
+    buttons.forEach(btn => btn.classList.remove('active'));
+    button.classList.add('active');
+  });
+  });
+
+// 로그아웃 버튼 클릭 시
+const logoutButton = document.querySelector('.logout');
+logoutButton.addEventListener('click', () => {
+  window.location.href = 'project.html';  // 로그아웃 후 이동
+});
+
+    const champ = document.getElementById('im');
+    champ.addEventListener('click', () => {
+    window.location.href = 'project_champ.html';
+  });
+
+    const home = document.getElementById('home');
+    home.addEventListener('click', () => {
+    window.location.href = 'project.html';
+  });
+
+  const ranking = document.getElementById('rank');
+  ranking.addEventListener('click', () => {
+  window.location.href = 'project_ranking.html';
+});
+
+  const spec = document.getElementById('spector');
+  spec.addEventListener('click', () => {
+  window.location.href = 'project_spector.html';
+});
+  </script>
+
+  
+</body>
+</html>

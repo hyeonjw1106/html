@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fc;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px;
+    box-sizing: border-box;
+  }
+  
+  .opgg {
+    margin-left: 30px;
+    margin-top: 27px;
+    color: black;
+    font-size: 24px;
+  }
+  
+  .intro-section {
+    margin-top: 50px;
+    margin-left: 50px;
+  }
+  
+  .intro_mes {
+    line-height: 40px;
+    letter-spacing: 0.7px;
+    margin-bottom: 20px;
+  }
+  
+  .intro_mes_plus {
+    margin-top: 10px;
+    color: #333;
+  }
+  
+  .form-section {
+    margin-top: 40px;
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .in {
+    width: 320px;
+    height: 40px;
+    padding: 10px;
+    font-size: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  .in:focus {
+    border-color: #007acc;
+    outline: none;
+  }
+
+.complete {
+    margin-top: 20px;
+    margin-left: 50px;
+    width: 200px;
+    height: 50px;
+    background-color: skyblue;
+    color: black;
+    border: solid 1px black;
+}
+  
