@@ -1,0 +1,50 @@
+/* 기본 화면 전체 설정 */
+#screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    cursor: pointer;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgray;
+  
+    color: black;
+    user-select: none;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  /* 상태별 배경색 */
+  #screen.ready {
+    background-color: #66CCFF;
+    color: white;
+  }
+  
+  #screen.now {
+    background-color: yellowgreen;
+    color: white;
+  }
+  
+  #screen.tooSoon {
+    background-color: red;
+    color: white;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  /* 버튼 스타일 (선택사항) */
+  #reset-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+  
